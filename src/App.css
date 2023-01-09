@@ -440,6 +440,10 @@ b {
     color: #FEF2F2;
 }
 
+.ant-card .ant-card-body p {
+    color: #FEF2F2;
+}
+
 .ant-typography.heading {
     color: #f7658b;
 }
@@ -486,4 +490,8 @@ b {
 
 .ant-col span {
     color: #bf7c84;
+}
+
+a {
+    color: #F53163;
 }
