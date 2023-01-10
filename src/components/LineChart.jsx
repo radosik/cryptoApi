@@ -2,6 +2,27 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { Col, Row, Typography } from 'antd';
 
+import {
+  Chart as ChartJS,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Tooltip,
+  Filler,
+  TimeScale,
+} from 'chart.js'
+
+import "chartjs-adapter-moment"
+
+ChartJS.register(
+  LinearScale,
+  TimeScale,
+  PointElement,
+  Filler,
+  LineElement,
+  Tooltip,
+)
+
 const { Title } = Typography;
 
 const LineChart = ({ coinHistory, currentPrice, coinName }) => {
@@ -11,10 +32,12 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
     coinPrice.push(coinHistory?.data?.history[i].price);
   }
-  
+
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
-    coinTimestamp.push(new Date(coinHistory?.data?.history[i].timestamp).toLocaleDateString());
-  }   
+    coinTimestamp.push(new Date(coinHistory.data.history[i].timestamp * 1000).toLocaleDateString());
+  }
+
+  console.log(coinHistory);
 
   const data = {
     labels: coinTimestamp,
@@ -31,13 +54,17 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
 
   const options = {
     scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: true,
-          },
+      x: {
+        type: 'time',
+        
+      },
+      y:
+      {
+        ticks: {
+          beginAtZero: true,
         },
-      ],
+      },
+
     },
   };
 

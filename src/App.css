@@ -495,3 +495,11 @@ b {
 a {
     color: #F53163;
 }
+
+.ant-menu-item-selected {
+    background-color: #F53163 !important;
+}
+
+.ant-typography a:focus {
+    color: #F53163;
+}

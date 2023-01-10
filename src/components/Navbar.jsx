@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Menu, Typography, Avatar } from 'antd';
-import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined } from '@ant-design/icons';
+import { Menu, Typography, Avatar } from 'antd';
+import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined } from '@ant-design/icons';
 
 import icon from '../cryptocurrency.png';
 
@@ -13,20 +13,19 @@ const Navbar = () => {
                 <Typography.Title level={2} className="logo"><Link to="/">CryptoRado</Link></Typography.Title>
             </div>
                 <Menu theme="dark">
-                    <Menu.Item icon={<HomeOutlined />}>
+                    <Menu.Item key='Home' icon={<HomeOutlined />}>
                         <Link to="/">Home</Link>
                     </Menu.Item>
-                    <Menu.Item icon={<FundOutlined />}>
+                    <Menu.Item key='Cryptocurrencies' icon={<FundOutlined />}>
                         <Link to="/cryptocurrencies">Cryptocurrencies</Link>
                     </Menu.Item>
-                    <Menu.Item icon={<MoneyCollectOutlined />}>
+                    <Menu.Item key='Exchanges' icon={<MoneyCollectOutlined />}>
                         <Link to="/exchanges">Exchanges</Link>
                     </Menu.Item>
-                    <Menu.Item icon={<BulbOutlined />}>
+                    <Menu.Item key='News' icon={<BulbOutlined />}>
                         <Link to="/news">News</Link>
                     </Menu.Item>
                 </Menu>
-            )
         </div>
     )
 }
