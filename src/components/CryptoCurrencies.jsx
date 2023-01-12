@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import millify from 'millify';
 import { Link } from 'react-router-dom';
-import { Card, Row, Col, Input } from 'antd';
+import { Card, Row, Col, Input, Typography } from 'antd';
 
 import { useGetCryptosQuery } from '../services/cryptoApi';
 import Loader from './Loader';
+
+const { Title } = Typography;
 
 const Cryptocurrencies = ({ simplified }) => {
   const count = simplified ? 12 : 100;
@@ -24,6 +26,7 @@ const Cryptocurrencies = ({ simplified }) => {
 
   return (
     <>
+      <Title level={3} className='search-title'>Search your prefed coin.</Title>
       {!simplified && (
         <div className="search-crypto">
           <Input
@@ -47,8 +50,8 @@ const Cryptocurrencies = ({ simplified }) => {
                 extra={<img className="crypto-image" alt={currency.uuid} src={currency.iconUrl} />}
                 hoverable
               >
-                <p>Price: {millify(currency.price)}</p>
-                <p>Market Cap: {millify(currency.marketCap)}</p>
+                <p>Price: $ {millify(currency.price)}</p>
+                <p>Market Cap: $ {millify(currency.marketCap)}</p>
                 <p>Daily Change: {currency.change}%</p>
               </Card>
             </Link>

@@ -20,8 +20,10 @@ const News = ({ simplified }) => {
 
   return (
     <Row gutter={[24, 24]}>
+      
       {!simplified && (
         <Col span={24}>
+          <Title level={3} className='search-title'>Select your prefed coin news.</Title>
           <Select
             showSearch
             className="select-news"

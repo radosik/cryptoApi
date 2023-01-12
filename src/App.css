@@ -1,7 +1,7 @@
 :root {
     --text-primary: #919191;
     --bgPrimary: #8587a6;
-    --bgSecondary: #F9F9F9;
+    --bgSecondary: #FEF2F2;
     --pink: #f7658b;
     --light-blue: #e6f7ff;
     --border: #d9d9d9;
@@ -20,6 +20,7 @@ a:hover {
 .app {
     display: flex;
     overflow: hidden;
+    background-color: #FEF2F2;
 }
 
 .navbar {
@@ -132,6 +133,10 @@ a:hover {
     }
 
     .home-title {
+        font-size: 1.4rem !important;
+    }
+
+    .search-title {
         font-size: 1.4rem !important;
     }
 
@@ -383,12 +388,8 @@ a:hover {
     margin-top: 0px !important;
 }
 
-.exchange-image {
-    margin: 0px 10px !important;
-}
-
 .search-crypto {
-    margin: 20px auto 30px auto;
+    margin: 0 0 30px 0;
     width: 250px;
 }
 
@@ -418,8 +419,7 @@ a:hover {
 }
 
 b {
-    color: green;
-    padding-right: 2px;
+    color: #FEF2F2;
 }
 
 .ant-menu-dark {
@@ -452,6 +452,10 @@ b {
     color: #f7658b;
 }
 
+.ant-typography.search-title {
+    color: #f7658b;
+}
+
 .ant-typography.show-more a {
     color: #F53163;
 }
@@ -462,6 +466,10 @@ b {
 
 .ant-typography.link-name {
     color: #F53163;
+}
+
+.ant-typography.logo {
+    margin-bottom: 0;
 }
 
 .ant-statistic .ant-statistic-content {
@@ -502,4 +510,13 @@ a {
 
 .ant-typography a:focus {
     color: #F53163;
+}
+
+.ant-btn-default:not(:disabled):hover {
+    color: #F53163;
+}
+
+.menu-control-container {
+    margin-right: 18px;
+    color: #B6666F;
 }
