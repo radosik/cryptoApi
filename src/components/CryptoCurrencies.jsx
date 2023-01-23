@@ -12,7 +12,7 @@ const Cryptocurrencies = ({ simplified }) => {
   const count = simplified ? 12 : 100;
   const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
   const [cryptos, setCryptos] = useState();
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState();
 
   useEffect(() => {
     setCryptos(cryptosList?.data?.coins);

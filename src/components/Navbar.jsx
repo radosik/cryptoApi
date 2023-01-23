@@ -8,25 +8,15 @@ import icon from '../cryptocurrency.png';
 
 const Navbar = () => {
     const [activeMenu, setActiveMenu] = useState(true);
-    const [screenSize, setScreenSize] = useState(undefined);
+
+    const handleResize = () => {
+        setActiveMenu(() => window.innerWidth <= 800 ? false : true);
+    }
 
     useEffect(() => {
-        const handleResize = () => setScreenSize(window.innerWidth);
-
         window.addEventListener('resize', handleResize);
-
-        handleResize();
-
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-
-    useEffect(() => {
-        if (screenSize <= 800) {
-            setActiveMenu(false);
-        } else {
-            setActiveMenu(true);
-        }
-    }, [screenSize]);
 
     return (
         <div className="nav-container">

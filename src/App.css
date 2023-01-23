@@ -14,7 +14,7 @@
 }
 
 a:hover {
-    color: var(--pink) !important;
+    color: var(--pink);
 }
 
 .app {
@@ -64,13 +64,13 @@ a:hover {
 }
 
 .menu-control-container {
-    display: none !important;
-    position: absolute !important;
-    right: 10px !important;
-    top: 25px !important;
-    font-size: 1.2rem !important;
-    background-color: var(--bgSecondary) !important;
-    border: none !important;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    font-size: 1.2rem;
+    background-color: var(--bgSecondary);
+    border: none;
 }
 
 .loader {
@@ -124,7 +124,7 @@ a:hover {
     }
 
     .menu-control-container {
-        display: block !important;
+        display: block;
     }
 
     .ant-menu {
@@ -133,15 +133,15 @@ a:hover {
     }
 
     .home-title {
-        font-size: 1.4rem !important;
+        font-size: 1.4rem;
     }
 
     .search-title {
-        font-size: 1.4rem !important;
+        font-size: 1.4rem;
     }
 
     .show-more {
-        font-size: 1.3rem !important;
+        font-size: 1.3rem;
     }
 }
 
@@ -186,9 +186,9 @@ a:hover {
 }
 
 .coin-details-heading {
-    font-weight: 700 !important;
-    margin-top: 20px !important;
-    color: var(--pink) !important;
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--pink);
 }
 
 .coin-stats {
@@ -309,12 +309,12 @@ a:hover {
 }
 
 .news-card {
-    min-height: 300px !important;
+    min-height: 300px;
 }
 
 .news-image-container {
-    display: flex !important;
-    justify-content: space-between !important;
+    display: flex;
+    justify-content: space-between;
 }
 
 .news-title {
@@ -328,17 +328,17 @@ a:hover {
 
 .news-card p {
     color: #FEF2F2;
-    margin: 10px 0px !important;
+    margin: 10px 0px;
 }
 
 .news-card h4 {
     color: #FEF2F2;
-    margin: 10px 0px !important;
+    margin: 10px 0px;
 }
 
 .news-card span {
     color: #FEF2F2;
-    margin: 10px 0px !important;
+    margin: 10px 0px;
 }
 
 .provider-container {
@@ -358,23 +358,23 @@ a:hover {
 }
 
 .chart-title {
-    color: #C5ADC5 !important;
+    color: #C5ADC5;
 }
 
 .price-container {
-    display: flex !important;
-    gap: 20px !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .price-change {
-    font-weight: 900 !important;
+    font-weight: 900;
 }
 
 .current-price {
-    margin-top: 0px !important;
-    font-weight: 900 !important;
+    margin-top: 0px;
+    font-weight: 900;
 }
 
 .home-heading-container {
@@ -385,7 +385,7 @@ a:hover {
 }
 
 .show-more {
-    margin-top: 0px !important;
+    margin-top: 0px;
 }
 
 .search-crypto {
@@ -394,7 +394,7 @@ a:hover {
 }
 
 .crypto-card-container {
-    min-height: 65vh !important;
+    min-height: 65vh;
 }
 
 .crypto-card {
@@ -406,8 +406,8 @@ a:hover {
 }
 
 .select-timeperiod {
-    width: 200px !important;
-    margin-top: 20px !important;
+    width: 200px;
+    margin-top: 20px;
 }
 
 .footer {
@@ -505,7 +505,7 @@ a {
 }
 
 .ant-menu-item-selected {
-    background-color: #F53163 !important;
+    background-color: #F53163;
 }
 
 .ant-typography a:focus {
