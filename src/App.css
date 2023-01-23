@@ -3,6 +3,7 @@
     --bgPrimary: #8587a6;
     --bgSecondary: #FEF2F2;
     --pink: #f7658b;
+    --bright-pink: #F53163;
     --light-blue: #e6f7ff;
     --border: #d9d9d9;
 }
@@ -78,12 +79,6 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media screen and (max-width:1300px) {
-    .main {
-        margin-left: 50px;
-    }
 }
 
 @media screen and (max-width:1170px) {
@@ -188,7 +183,6 @@ a:hover {
 .coin-details-heading {
     font-weight: 700;
     margin-top: 20px;
-    color: var(--pink);
 }
 
 .coin-stats {
@@ -234,7 +228,7 @@ a:hover {
 }
 
 .coin-desc-link a {
-    color: var(--pink);
+    color: var(--bright-pink);
 }
 
 .coin-desc-link h3 {
@@ -354,11 +348,11 @@ a:hover {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    color: #C5ADC5;
+    color: var(--bright-pink);
 }
 
 .chart-title {
-    color: #C5ADC5;
+    color: var(--bright-pink);
 }
 
 .price-container {
@@ -457,15 +451,33 @@ b {
 }
 
 .ant-typography.show-more a {
-    color: #F53163;
+    color: var(--bright-pink);
 }
 
 .ant-typography.coin-name {
-    color: #F53163;
+    color: var(--bright-pink);
+}
+
+.ant-typography.coin-details-heading {
+    color: var(--bright-pink);
+}
+
+.ant-typography.chart-title {
+    color: var(--bright-pink);
+    margin-top: 1.2em;
+}
+
+.ant-typography.price-change {
+    color: var(--bright-pink);
+    margin-top: 1.2em;
 }
 
 .ant-typography.link-name {
-    color: #F53163;
+    color: var(--bright-pink);
+}
+
+.ant-typography.current-price {
+    color: var(--bright-pink);
 }
 
 .ant-typography.logo {
@@ -473,7 +485,7 @@ b {
 }
 
 .ant-statistic .ant-statistic-content {
-    color: #F53163;
+    color: var(--bright-pink);
 }
 
 .ant-statistic .ant-statistic-title {
@@ -501,19 +513,23 @@ b {
 }
 
 a {
-    color: #F53163;
+    color: var(--bright-pink);
 }
 
-.ant-menu-item-selected {
-    background-color: #F53163;
+.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: var(--bright-pink);
+}
+
+.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active {
+    background-color: var(--pink);
 }
 
 .ant-typography a:focus {
-    color: #F53163;
+    color: var(--bright-pink);
 }
 
 .ant-btn-default:not(:disabled):hover {
-    color: #F53163;
+    color: var(--bright-pink);
 }
 
 .menu-control-container {
