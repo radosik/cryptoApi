@@ -303,7 +303,7 @@ a:hover {
 }
 
 .news-card {
-    min-height: 300px;
+    min-height: 450px;
 }
 
 .news-image-container {
@@ -332,7 +332,7 @@ a:hover {
 
 .news-card span {
     color: #FEF2F2;
-    margin: 10px 0px;
+    margin: 10px 1px;
 }
 
 .provider-container {
@@ -385,10 +385,6 @@ a:hover {
 .search-crypto {
     margin: 0 0 30px 0;
     width: 250px;
-}
-
-.crypto-card-container {
-    min-height: 65vh;
 }
 
 .crypto-card {
@@ -508,10 +504,6 @@ b {
     color: #bf7c84;
 }
 
-.ant-col span {
-    color: #bf7c84;
-}
-
 a {
     color: var(--bright-pink);
 }
@@ -536,3 +528,37 @@ a {
     margin-right: 18px;
     color: #B6666F;
 }
+
+.ant-row.news-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.ant-card-body .news-image-container img {
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.ant-row .ant-col.news {
+    max-width: none;
+}
+
+.ant-avatar {
+    background-color: #FEF2F2;
+} 
+
+.logo-container .ant-avatar {
+    background: none;
+}
+
+.inner-circle {
+    background: #FEF2F2;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+  }
